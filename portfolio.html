@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Jeevan Sambath</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f5;
+      color: #222;
+      scroll-behavior: smooth;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00d1b2;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #00d1b2;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+      background: #eafaf9;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-badge {
+      background: #00d1b2;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #00d1b2;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #333;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      /* Remove margin-top for sticky footer */
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .skills {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jeevan Sambath</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate 3rd-year B.Tech IT student with a strong interest in full stack development. I enjoy building responsive websites and web applications that solve real-world problems.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-badge" title="Markup language for creating web pages">HTML</div>
+        <div class="skill-badge" title="Styling language for designing web pages">CSS</div>
+        <div class="skill-badge" title="Programming language for interactive web features">JavaScript</div>
+        <div class="skill-badge" title="NoSQL database for scalable web apps">MongoDB</div>
+        <div class="skill-badge" title="Relational database for structured data storage">MySQL</div>
+        <div class="skill-badge" title="Version control and collaboration platform">Git & GitHub</div>
+      </div>
+      <ul style="margin-top:1rem;">
+        <li><strong>HTML:</strong> Standard markup language for building web pages and applications.</li>
+        <li><strong>CSS:</strong> Stylesheet language for visually designing and laying out web content.</li>
+        <li><strong>JavaScript:</strong> Scripting language for adding interactivity and dynamic content to websites.</li>
+        <li><strong>MongoDB:</strong> NoSQL database for storing and managing unstructured data in web apps.</li>
+        <li><strong>MySQL:</strong> Popular open-source relational database for structured data management.</li>
+        <li><strong>Git & GitHub:</strong> Tools for version control, code management, and team collaboration.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <strong>E-court Case Management Portal</strong>
+        <p>
+          A comprehensive web platform designed to digitize and streamline the management of court case records for both clients and lawyers. The portal enables secure document uploads, real-time case tracking, and transparent communication between legal professionals and their clients.
+        </p>
+        <ul>
+          <li>Built with MERN stack (MongoDB, Express.js, React, Node.js) for a robust, scalable architecture.</li>
+          <li>User authentication and authorization using JWT, with role-based dashboards for lawyers and clients.</li>
+          <li>Secure file storage and retrieval using AWS S3, with encryption for sensitive documents.</li>
+          <li>Real-time notifications and updates for hearings, filings, and case status via Socket.io.</li>
+          <li>Advanced search and filtering for quick access to case histories and documents.</li>
+          <li>Audit logs for all actions to ensure traceability and accountability.</li>
+          <li>Responsive UI for both desktop and mobile users, built with React and Material-UI.</li>
+          <li>Admin panel for managing users, permissions, and system settings.</li>
+          <li>Future enhancements: Integration with government APIs for e-filing, calendar sync, and AI-based document analysis.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <strong>Subscription and Payment Manager</strong>
+        <p>
+          A user-friendly web application that helps individuals and businesses efficiently track and manage their online subscriptions and recurring payments.
+        </p>
+        <ul>
+          <li>Developed using Python (Flask) for backend REST APIs and React for frontend SPA.</li>
+          <li>MongoDB for storing user, subscription, and payment data, with aggregation for analytics.</li>
+          <li>Automated email/SMS reminders using third-party APIs (e.g., Twilio, SendGrid) for upcoming renewals and failed payments.</li>
+          <li>Interactive dashboard with charts and analytics (Chart.js) for visualizing spending trends and upcoming expenses.</li>
+          <li>Secure login and user management with password hashing and JWT-based sessions.</li>
+          <li>Mobile-friendly design for easy access on any device, with PWA support for offline use.</li>
+          <li>Export options for subscription and payment history (CSV, PDF).</li>
+          <li>Future enhancements: Integration with payment gateways for direct payment, AI-based spending recommendations, and multi-user support for families/teams.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <strong>College Admission Dashboard</strong>
+        <p>
+          A CRUD (Create, Read, Update, Delete) web application built with Flask and SQLite, tailored for college staff to manage student admission records.
+        </p>
+        <ul>
+          <li>Backend: Python Flask REST API with SQLite database for lightweight, easy deployment.</li>
+          <li>Frontend: Simple HTML/CSS/JavaScript interface for staff users, with Bootstrap for responsive design.</li>
+          <li>Features search, filter, and export (CSV/PDF) of student records for reporting and analysis.</li>
+          <li>User authentication for secure access, with different roles for admin and staff.</li>
+          <li>Form validation and error handling for data integrity and user feedback.</li>
+          <li>Bulk import/export of student data for efficient onboarding and record-keeping.</li>
+          <li>Deployed on Heroku for demonstration and testing, with Docker support for local development.</li>
+          <li>Future enhancements: Integration with SMS/email APIs for admission notifications, analytics dashboard for admission trends, and migration to PostgreSQL for scalability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:s99577939@gmail.com">s99577939@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919894948791">+91 98949 48791</a></p>
+      <div class="contact">
+        <a href="https://github.com/jeevansambath-2004" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeevan-sambath-78736428a" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jeevan Sambath | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

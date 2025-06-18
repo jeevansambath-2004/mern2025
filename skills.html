@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f5;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00d1b2;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills li {
+      background: #eafaf9;
+      border-left: 5px solid #00d1b2;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      transition: background 0.2s;
+    }
+    .skills li:hover {
+      background: #d1f5ee;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      /* Remove margin-top for sticky footer */
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .skills ul {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Skills</h1>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="skills">
+      <ul style="width:100%; max-width:600px; margin:auto; padding-left:0;">
+        <li><strong>HTML:</strong> Standard markup language for building web pages and applications.</li>
+        <li><strong>CSS:</strong> Stylesheet language for visually designing and laying out web content.</li>
+        <li><strong>JavaScript:</strong> Scripting language for adding interactivity and dynamic content to websites.</li>
+        <li><strong>Python:</strong> High-level programming language for backend, scripting, and automation.</li>
+        <li><strong>Flask:</strong> Lightweight Python web framework for building web applications and APIs.</li>
+        <li><strong>React:</strong> JavaScript library for building fast and interactive user interfaces.</li>
+        <li><strong>MySQL:</strong> Popular open-source relational database for structured data management.</li>
+        <li><strong>MongoDB:</strong> NoSQL database for storing and managing unstructured data in web apps.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jeevan Sambath</p>
+  </footer>
+</body>
+</html>
