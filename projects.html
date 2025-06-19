@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f5;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00d1b2;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+    .project {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 5px solid #00d1b2;
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: scale(1.02);
+      background: #eafaf9;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      /* Remove margin-top for sticky footer */
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+      <h3>E-court Case Management Portal</h3>
+      <p>
+        A comprehensive web platform to digitize and streamline court case records for clients and lawyers.
+        Built with the MERN stack (MongoDB, Express.js, React, Node.js), it features secure document uploads, real-time case tracking, and transparent communication.
+      </p>
+      <ul>
+        <li>User authentication and role-based dashboards for lawyers and clients (JWT-based).</li>
+        <li>Secure file storage on AWS S3 with encryption for sensitive documents.</li>
+        <li>Real-time notifications for hearings and updates using Socket.io.</li>
+        <li>Advanced search/filter for quick access to case histories and documents.</li>
+        <li>Audit logs for all actions and admin panel for user/permission management.</li>
+        <li>Responsive UI with React and Material-UI.</li>
+        <li>Planned: Integration with government APIs for e-filing and AI-based document analysis.</li>
+      </ul>
+    </section>
+    <section class="project">
+      <h3>Subscription & Payment Manager</h3>
+      <p>
+        A web application to track and manage online subscriptions and recurring payments.
+        Backend is Python (Flask), frontend is React, and MongoDB is used for data storage.
+      </p>
+      <ul>
+        <li>Automated email/SMS reminders for renewals and failed payments (Twilio, SendGrid APIs).</li>
+        <li>Interactive dashboard with analytics and charts (Chart.js) for spending trends.</li>
+        <li>Secure login, password hashing, and JWT-based sessions.</li>
+        <li>Mobile-friendly design with PWA support for offline use.</li>
+        <li>Export options for subscription/payment history (CSV, PDF).</li>
+        <li>Planned: Payment gateway integration, AI-based spending recommendations, multi-user support.</li>
+      </ul>
+    </section>
+    <section class="project">
+      <h3>College Admission Dashboard</h3>
+      <p>
+        A CRUD web application built with Flask and SQLite for college staff to manage student admission records.
+      </p>
+      <ul>
+        <li>REST API backend (Flask) and simple HTML/CSS/JS frontend (Bootstrap for responsive design).</li>
+        <li>Search, filter, and export (CSV/PDF) of student records.</li>
+        <li>User authentication with admin/staff roles.</li>
+        <li>Bulk import/export of student data for efficient onboarding.</li>
+        <li>Form validation and error handling for data integrity.</li>
+        <li>Deployed on Heroku, Docker support for local development.</li>
+        <li>Planned: SMS/email notifications, analytics dashboard, PostgreSQL migration.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jeevan Sambath</p>
+  </footer>
+</body>
+</html>

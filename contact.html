@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f5;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00d1b2;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #00d1b2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #333;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      /* Remove margin-top for sticky footer */
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Email: <a href="mailto:s99577939@gmail.com">s99577939@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919894948791">+91 98949 48791</a></p>
+      <p>
+        GitHub: <a href="https://github.com/jeevansambath-2004" target="_blank">github.com/jeevansambath-2004</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/jeevan-sambath-78736428a" target="_blank">linkedin.com/in/jeevansambath</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jeevan Sambath</p>
+  </footer>
+</body>
+</html>
