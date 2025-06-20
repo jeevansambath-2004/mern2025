@@ -1,0 +1,104 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+/* General container style */
+.page-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(150, 21, 21, 0.496);
+}
+
+/* Login.jsx */
+.login-form { 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.login-form input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+.login-form button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login-form button:hover {
+  background: #0056b3;
+}
+
+/* Skills.jsx */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+.skills-list li {
+  background: #e3f2fd;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+/* Counter.jsx */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-value {
+  font-size: 2rem;
+  margin: 16px 0;
+}
+.counter-buttons button {
+  margin: 0 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+.counter-buttons button:hover {
+  background: #388e3c;
+}
+
+/* Home.jsx */
+.home-title {
+  color: #1976d2;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.home-list {
+  list-style: disc inside;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.home-list li {
+  margin: 6px 0;
+  color: #333;
+}
+
+/* About.jsx */
+.about-section {
+  background: #fff3e0;
+  padding: 24px;
+  border-radius: 10px;
+  color: #e65100;
+  font-size: 1.1rem;
+  margin: 24px 0;
+  box-shadow: 0 1px 6px rgba(199, 31, 31, 0.07);
+}
