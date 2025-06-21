@@ -6,7 +6,8 @@ const Hooks = () => {
     <div style={{display:"flex", flexDirection: "column"}}>
       <Link to='/state'>useState</Link>
       <Link to='/effect'>useEffect</Link>
-      
+      <Link to='/ref'>useRef</Link>
+      <Link to='/reducer'>useReducer</Link>
     </div>
   )
 }

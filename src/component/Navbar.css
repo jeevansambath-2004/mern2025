@@ -1,34 +1,46 @@
 /* Navbar styles */
 .navbar {
   background: #d3d7d9;
-  padding: 20px 40px;
+  padding: 0 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  min-height: 80px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 90px; /* To prevent content from being hidden under navbar */
 }
 
 .navbar .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   align-items: center;
 }
 
 .link {
   background: #00e600;
   color: #222;
-  padding: 10px 30px;
-  border-radius: 10px;
+  padding: 14px 40px;
+  border-radius: 12px;
   border: 2px solid #222;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 .link:hover {
   background: #222;
   color: #00e600;
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Login form styles */

@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f0f4f8;
+  background: #0772dd;
 }
 /* General container style */
 .page-container {
@@ -12,6 +12,20 @@ body {
   background: #f9f9f9;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(150, 21, 21, 0.496);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main content alignment */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Login.jsx */
@@ -94,11 +108,11 @@ body {
 
 /* About.jsx */
 .about-section {
-  background: #fff3e0;
+  background: #ca8415;
   padding: 24px;
   border-radius: 10px;
   color: #e65100;
   font-size: 1.1rem;
-  margin: 24px 0;
+  margin: 24px 0; 
   box-shadow: 0 1px 6px rgba(199, 31, 31, 0.07);
 }
