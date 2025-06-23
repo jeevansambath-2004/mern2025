@@ -1,43 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import Child from "./component/Child";
+import Skills from "./page/Skills";
+import Contact from "./page/Contact";
+import About from "./page/About";
+import Home from "./page/Home";
+import Login from "./page/Login";
+import Counter from "./page/Counter"
+const App = () => {
+  var fruits = ["Apple", "Banana", "Orange"];
+  var user= {username:"jeevan",password:"123456"};  
   return (
     <>
-    <div>
-      <h1>Hello World!</h1>
-    </div>
-    <div>
-    <button type="submit">jeevan</button>
-    <table border="3">
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>Jeevan</td>
-        <td>sambath</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Jane</td>
-        <td>Smith</td>
-        <td>25</td>
-      </tr>    
-    </table>
-    </div>
+      <div>
+        <Child />
+      </div>
+      <div><Child name="Jeevan" age="20"/><Child name="kavin" age="25"/></div>
+      <Home items={fruits} users={user}/>
+      <Skills/>
+      <div>contact</div>
+      <div><Login users={user}/></div>
+      <Counter/>
     </>
-  )
-}
-
-export default App
+  );
+};
+export default App;
